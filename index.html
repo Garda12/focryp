@@ -70,9 +70,39 @@ Dengan menggunakan GetPIP, pengguna dapat menghemat waktu dan biaya dalam melaku
         <img src="img/pip.jfif" width="20px">
     </a>
 </div>
+<style>
+    .pip-button {
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      cursor: pointer;
+    }
 
+    .pip-button:hover {
+      transform: scale(1.1); /* Zoom out effect */
+      box-shadow: 0 0 15px rgba(17, 73, 255, 0.5); /* Blue shadow on hover */
+    }
 
+    .pip-logo {
+      animation: rotateLogo 3s infinite linear; /* Rotate logo animation */
+    }
 
+    @keyframes rotateLogo {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .pip-button[data-useLabel="true"] {
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+      display: inline-block;
+    }
+
+    .pip-button[data-useLabel="true"]:hover {
+      transform: scale(1.1); /* Zoom in effect */
+      color: #FF4500; /* Change color on hover */
+    }
 
 <script src="https://button.getpip.com/cdn/pipbutton.js"></script>
 <div class="pip-button"
