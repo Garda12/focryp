@@ -1,0 +1,1 @@
+    <script src="{https://button.getpip.com/cdn/pipbutton.js}"> </script>
